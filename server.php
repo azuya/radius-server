@@ -204,7 +204,7 @@ class radius_server {
                 if (strlen($dict_item) < 10 || $dict_item[0] == "#") {
                     continue;
                 } else
-                if (substr($dict_item, 0, 8) == "\$INCLUDE") {
+                if (substr($dict_item, 0, 8) == "\$INCLUDE ") {
                     $dict_file = substr($dict_item, 9);
                     $this->load_dictionary($dict_file);
                 } else {
