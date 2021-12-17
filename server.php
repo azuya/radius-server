@@ -175,6 +175,7 @@ class radius_server {
                 echo $message . "\n";   // echo to console
             }
         }
+        echo $message . "\n";   // echo to console
     }
 
     /**
